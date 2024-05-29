@@ -1,0 +1,1 @@
+export const ColorData = ["Blue", "BlueViolet", "Brown", "Chocolate", "Crimson", "DarkBlue", "DarkCyan", "DarkGreen", "DarkMagenta", "Indigo"];

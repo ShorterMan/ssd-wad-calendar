@@ -1,0 +1,41 @@
+td{
+    position: relative;
+    vertical-align:top;
+    padding: 10px;
+}
+
+.filledData{
+    border: 1px solid black;
+}
+
+.eventbox{
+    color: white;
+    margin-bottom: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+.iconsContainer{
+    position: absolute;
+    right: 5px;
+}
+
+.inputBox{
+    padding: 5px;
+    background-color: lightslategray;
+    color: black;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+.divAll{
+    width: 100%;
+    min-height: 50px;
+    height: 100%;
+}
+
+.buttonCancel{
+    margin-left: 5px;
+}
