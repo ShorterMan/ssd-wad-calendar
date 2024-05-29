@@ -67,17 +67,19 @@ export default function CalendarDetail({
   }
 
   function doneUpdateEvent() {
-    let updatedEvent = structuredClone(eventList[isEditIndex]);
-    updatedEvent.eventName = inputEventName;
-    updatedEvent.inviteeMail = inputMail;
-    updatedEvent.eventTime = inputTime;
-    onUpdateEvent(id, isEditIndex, updatedEvent);
-    setIsEditIndex(-1);
-    setUpdateMode(false);
-    setInputEventName("");
-    setInputMail("");
-    setInputTime("");
-    setIsEdit(false);
+    if (validateEmail()) {
+      let updatedEvent = structuredClone(eventList[isEditIndex]);
+      updatedEvent.eventName = inputEventName;
+      updatedEvent.inviteeMail = inputMail;
+      updatedEvent.eventTime = inputTime;
+      onUpdateEvent(id, isEditIndex, updatedEvent);
+      setIsEditIndex(-1);
+      setUpdateMode(false);
+      setInputEventName("");
+      setInputMail("");
+      setInputTime("");
+      setIsEdit(false);
+    } else alert("You have entered an invalid email address!");
   }
 
   function cancelInput() {
