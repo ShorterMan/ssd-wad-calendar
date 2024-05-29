@@ -133,24 +133,33 @@ export default function CalendarDetail({
       {updateMode && dateNumber != 0 && (
         <div className="inputBox">
           <div>
+            <label htmlFor="inputName">Input Event Name:</label>
+          </div>
+          <div>
             <input
               type="text"
               name="inputName"
               id="inputName"
-              placeholder="Input Event Name"
+              placeholder="Event Name"
               value={inputEventName}
               onChange={handleInputEventName}
             />
+          </div>
+          <div>
+            <label htmlFor="inputMail">Input Invitee Mail:</label>
           </div>
           <div>
             <input
               type="text"
               name="inputMail"
               id="inputMail"
-              placeholder="Input Invitee"
+              placeholder="Invitee Mail"
               value={inputMail}
               onChange={handleInputMail}
             />
+          </div>
+          <div>
+            <label htmlFor="inputTime">Input Time:</label>
           </div>
           <div>
             <input
